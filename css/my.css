@@ -1,0 +1,185 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "montserrat", sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.container{
+    background: #f1f1f1;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.kiriKanan{
+    flex: 1;
+    height: 91vh;
+    width: 100vh;
+    position: relative;
+}
+
+.kolomKiri{
+    background: url(../gambar/2.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+.judul,
+.subJudul{
+    font-family: 'Arial Narrow', 'Helvetica Neue', sans-serif;
+    letter-spacing: 5px;
+}
+
+.judul{
+    position: absolute;
+    margin-top: -35px;
+    color: #16d3ba;
+    text-shadow: 1px 1px 1px rgb(27, 25, 25);
+    font-weight: 600;
+}
+
+.jalan{
+    position: absolute;
+    margin-top: 165px;
+    color: #122112;
+    text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.7);
+    font-size: 10px;
+}
+
+.waktu{
+    color: #fff;
+    text-transform: uppercase;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+}
+
+.padding{
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.waktu span{
+    padding: 0 14px;
+    font-size: 13px;
+    text-shadow: 1px 1px 1px black;
+}
+
+.waktu span div{
+    font-size: 40px;
+}
+
+.interaktif{
+    width: 90%;
+    overflow: hidden;
+}
+
+.interaktif h2{
+    font-size: 19px;
+}
+
+.interaktif h4{
+    font-style: italic;
+    font-size: 12px;
+    font-weight: 400;
+    margin-bottom: 15px;
+    position: relative;
+    overflow: hidden;
+}
+
+.interaktif input,
+.interaktif a{
+    display: block;
+    margin: 12px auto;
+    width: 100%;
+    max-width: 456px;
+    padding: 15px 20px;
+    border-radius: 25px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+.interaktif form a {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.interaktif form .buttoninteraktif:hover{
+    font-weight: 700;
+    text-shadow: 1px 1px 1px #1f1f1f;
+}
+
+
+.interaktif .buttoninteraktif{
+    background: linear-gradient(119deg, rgb(194, 33, 33), rgb(150, 2, 2), rgb(133, 6, 6), rgb(119, 3, 3));
+    color: #eee;
+    transition: 500ms all linear;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.buttoninteraktif:hover{
+    opacity: 0.9;
+    font-weight: lighter;
+    color: rgb(177, 159, 159);
+    background: linear-gradient(119deg, rgb(119, 3, 3), rgb(133, 6, 6), rgb(150, 2, 2), rgb(194, 33, 33));
+}
+
+
+
+/* Responsive in Tablet and Mobile */
+@media screen and (max-width: 753px) {
+
+    .kiriKanan{
+        flex: 100%;
+    }
+
+    marquee{
+        width: 100%;
+    }
+
+    .subJudul{
+        font-size: 19px;
+    }
+
+}
+
+@media screen and (max-width: 400px) {
+
+    h2{
+        font-size: 20px;
+    }
+
+    marquee{
+        width: 100%;
+        font-size: 9px;
+
+    }
+
+    .waktu span, .subJudul{
+        font-size: 12px !important;
+    }
+
+    .waktu span div{
+        font-size: 35px;
+    }
+
+    .interaktif h2{
+        font-size: 15px;
+    }
+
+    .interaktif h4{
+        font-size: 11px;
+    }
+
+
+}
+
+
+
+
+
+
